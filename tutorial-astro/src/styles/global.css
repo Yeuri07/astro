@@ -8,11 +8,7 @@ html {
     width: 100%;
     max-width: 80ch;
     padding: 1rem;
-<<<<<<< HEAD
-    
-=======
     line-height: 1.5;
->>>>>>> 1be4e84d194afd5df9707831f3777fca34468c10
   }
   
   * {
@@ -22,7 +18,7 @@ html {
   h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
-<<<<<<< HEAD
+
   }
 
 
@@ -111,6 +107,6 @@ html {
 
 }
 
-=======
-  }
->>>>>>> 1be4e84d194afd5df9707831f3777fca34468c10
+
+  
+
