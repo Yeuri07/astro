@@ -1,0 +1,8 @@
+
+---
+const { plataform, username } = Astro.props
+import '../styles/global.css'
+---
+
+
+<a class="footer-social" href={`https://www.${plataform}.com/${username}`} target="_blank">{plataform}</a>
