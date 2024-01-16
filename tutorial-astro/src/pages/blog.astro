@@ -1,8 +1,10 @@
 
 ---
-import Navigation from '../components/Navigation.astro';
+
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hamburger from '../components/Hamburger.astro';
 ---
 
 
@@ -16,8 +18,8 @@ import '../styles/global.css';
      <title>Astro</title>
    </head>
    <body>
-    
-    <Navigation />
+    <Hamburger />
+    <Header />
     
     <h1>Mi blog de Astro aprendizaje</h1>
     <p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
@@ -27,5 +29,8 @@ import '../styles/global.css';
       <li><a href="/posts/post-3/">Publicacion 3</a></li>
     </ul>
     <Footer />
+    <script>
+      import '../scripts/menu.js'
+    </script>
    </body>
  </html>
