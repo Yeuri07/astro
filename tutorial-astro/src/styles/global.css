@@ -8,7 +8,7 @@ html {
     width: 100%;
     max-width: 80ch;
     padding: 1rem;
-    line-height: 1.5;
+    
   }
   
   * {
@@ -19,3 +19,90 @@ html {
     margin: 1rem 0;
     font-size: 2.5rem;
   }
+
+
+  .footer-social {
+   
+      padding: 0.5rem 1rem;
+      color: white;
+      background-color: #293aab;
+      text-decoration: none;
+    
+  }
+
+  .footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* estilos de la barra de navegación*/
+
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #000000;
+  }
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #5292f3;
+  color: #000000;
+}
+
+.expanded {
+  display: unset;
+  
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+ 
+    display: block;
+    position: static;
+    width: auto;
+    background: rgb(6, 87, 163);
+ 
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #ffffff;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+}
+
