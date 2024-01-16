@@ -1,9 +1,5 @@
 ---
-import '../styles/global.css';
-
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Hamburger from '../components/Hamburger.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 const pageTitle = "Sobre mi";
 
 const identy = {
@@ -29,33 +25,22 @@ const textCase = "uppercase"
 ---
 
 
-<html lang="es">
-    <head>
-     <meta charset="utf-8" />
-     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-     <meta name="viewport" content="width=device-width" />
-     <meta name="generator" content={Astro.generator} >
-     <title>{pageTitle}</title>
+<BaseLayout pageTitle = {pageTitle}>
 
-     <style define:vars={{skillColor, fontWeight, textCase}}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-       
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-        }
-    </style>
-   </head>
-   <body>
-    <Hamburger />
-    <Header />
-
-    <h1>Sobre mi</h1>
-    <h2>... ¡y mi nuevo sitio Astro!</h2>
+  <h1>{pageTitle}</h1>
+ <style define:vars={{skillColor, fontWeight, textCase}}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+   
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+    }
+</style>
+<h2>... ¡y mi nuevo sitio Astro!</h2>
   
     <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
   
@@ -78,13 +63,11 @@ const textCase = "uppercase"
       {finished && <p>He terminado el tutorial de Astro!</p>}
       {goal === 3 ? <p>Mi objetivo es terminar en 3 dias.</p> : <p>Mi objectivo no son 3 dias.</p>}
 
-      <Footer />
-      <script>
-        import '../scripts/menu.js'
-      </script>
-   </body>
+</BaseLayout>
 
- </html>
+
+
+
  
  
  
