@@ -20,6 +20,16 @@ html {
     font-size: 2.5rem;
 
   }
+  .h1-about{
+    color: purple;
+    font-size: 4rem;
+  }
+
+  .skill {
+    color: navy;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
 
 
   .footer-social {
@@ -106,7 +116,4 @@ html {
   }
 
 }
-
-
-  
 
