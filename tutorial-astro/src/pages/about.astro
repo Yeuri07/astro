@@ -19,27 +19,31 @@ const happy = true;
 const finished = false;
 const goal = 3;
 
-const skillColor = "navy"
-const fontWeight = "bold"
-const textCase = "uppercase"
+// const skillColor = "navy"
+// const fontWeight = "bold"
+// const textCase = "uppercase"
+
 ---
 
 
-<BaseLayout pageTitle = {pageTitle}>
 
-  <h1>{pageTitle}</h1>
- <style define:vars={{skillColor, fontWeight, textCase}}>
-  h1 {
-    color: purple;
-    font-size: 4rem;
-   
-  }
-  .skill {
-    color: var(--skillColor);
-    font-weight: var(--fontWeight);
-    text-transform: var(--textCase);
+<BaseLayout pageTitle = {pageTitle} text = 'h1-about' >
+
+
+  <!-- <style define:vars={{skillColor, fontWeight, textCase}}>
+    h1 {
+      color: purple;
+      font-size: 4rem;
+     
     }
-</style>
+    .skill {
+      color: var(--skillColor);
+      font-weight: var(--fontWeight);
+      text-transform: var(--textCase);
+      }
+  </style> -->
+
+
 <h2>... ¡y mi nuevo sitio Astro!</h2>
   
     <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
