@@ -2,7 +2,6 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import Hamburger from '../components/Hamburger.astro';
 const { pageTitle, text} = Astro.props;
 
 ---
@@ -16,7 +15,7 @@ const { pageTitle, text} = Astro.props;
 
   </head>
   <body>
-    <Hamburger/>
+  
     <Header/>
    
     <h1 class={text}>{pageTitle}</h1>
@@ -26,6 +25,7 @@ const { pageTitle, text} = Astro.props;
     <Footer />
     <script>
       import "../scripts/menu.js";
+      import "../scripts/icon.js";
     </script>
   </body>
 </html>
