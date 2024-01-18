@@ -134,3 +134,15 @@ html {
 .tag a {
   color: #00539F;
 }
+
+/* estyles for ThemeIcon*/
+
+html.dark {
+  background-color: #212123;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
